@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pizzaria Fantástica</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<%- include('./parts/head',{title:'Pizzaria Fantástica'}) %>
+
 	<link rel="stylesheet" href="/css/index.css">
 	<form action="/busca" method="GET">
 		<input type="text" name="busca" placeholder="Qual pizza você procura?" autocomplete="off">
@@ -24,5 +16,5 @@
 		</article>
 		<% } %>
 	</main>
-</body>
-</html>
+
+<%- include('./parts/foot') %> 
